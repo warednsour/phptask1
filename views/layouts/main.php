@@ -9,6 +9,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -39,10 +40,10 @@ AppAsset::register($this);
             </div>
             <ul class="navigation-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Резюме</a>
+                    <a class="nav-link" href="<?= Url::to(['/site'])?>">Резюме</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Мои резюме</a>
+                    <a class="nav-link" href="<?= Url::to(['/myresume'])?>">Мои резюме</a>
                 </li>
             </ul>
             <div class="navigation-menu__mobile">
