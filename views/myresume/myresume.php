@@ -1,3 +1,9 @@
+<?php
+
+use yii\helpers\Url;
+
+?>
+
 <div class="content">
     <div class="container">
         <div class="col-lg-9">
@@ -41,7 +47,7 @@
                                     <div
                                             class="col-xl-12 d-flex justify-content-between align-items-center flex-wrap">
                                         <div class="d-flex flex-wrap mobile-mb12">
-                                            <a class="mr16" href="#">Открыть</a>
+                                            <a class="mr16" href="<?= Url::to(['/myresume/editaddresume'])?>">Открыть</a>
                                         </div>
                                         <span class="mini-paragraph cadet-blue">Опубликовано 23 марта 2020 в
                                                 12:00</span>
