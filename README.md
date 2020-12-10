@@ -19,7 +19,8 @@
      organization varchar(255) NOT NULL,
 	position varchar(255) NOT NULL,
 	responsibilites varchar(255) NOT NULL,
-     about_you varchar(255) NOT NULL
+     about_you varchar(255) NOT NULL,
+     link varchar(255) NOT NULL
     )
 
 <p align="center">
