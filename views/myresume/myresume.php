@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Url;
-
+use yii\helpers\Html;
 ?>
 
 <div class="content">
@@ -26,7 +26,7 @@ use yii\helpers\Url;
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right"
                                              aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Редактировать</a>
+                                            <a class="dropdown-item" href="<?= Url::to(['/myresume/editregresume'])?>">Редактировать</a>
                                             <a class="dropdown-item" href="#">Удалить</a>
                                         </div>
                                     </div>
@@ -47,7 +47,7 @@ use yii\helpers\Url;
                                     <div
                                             class="col-xl-12 d-flex justify-content-between align-items-center flex-wrap">
                                         <div class="d-flex flex-wrap mobile-mb12">
-                                            <a class="mr16" href="<?= Url::to(['/myresume/editaddresume'])?>">Открыть</a>
+                                            <a class="mr16" href="<?= Url::to(['/myresume/viewresume'])?>">Открыть</a>
                                         </div>
                                         <span class="mini-paragraph cadet-blue">Опубликовано 23 марта 2020 в
                                                 12:00</span>
@@ -59,7 +59,7 @@ use yii\helpers\Url;
                                     <div class="my-resume-dropdown dropdown show mb8">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/dots.svg" alt="dots">
+                                            <img src="images/dots.svg" alt="dots"> <?//= Html::img('@web/images/dots.svg' , ['alt' => 'dots']);?>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right"
                                              aria-labelledby="dropdownMenuLink">

@@ -1,13 +1,14 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\Url;
  ?>
 
 <div class="content p-rel">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="mt8 mb40"><a href="#"><?= Html::img('@web/images/blue-left-arrow.svg' , ['alt' => 'arrow']); ?>Вернуться без
+                <div class="mt8 mb40"><a href="<?= Url::to(['/myresume'])?>"><?= Html::img('@web/images/blue-left-arrow.svg' , ['alt' => 'arrow']); ?>Вернуться без
                     сохранения</a>
                 </div>
             </div>

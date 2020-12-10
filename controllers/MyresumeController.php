@@ -19,11 +19,16 @@ class MyresumeController extends Controller {
   }
 
 
-  public function actionEditaddresume()
+  public function actionEditregresume()
   {
-    return $this->render('editaddresume.php');
+    return $this->render('editregresume.php');
   }
 
+
+  public function actionViewresume()
+  {
+    return $this->render('viewresume.php');
+  }
 }
 
 
