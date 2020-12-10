@@ -1,25 +1,25 @@
- CREATE TABLE resume (
+  CREATE TABLE `resume` (
     id int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
     family varchar(255) NOT null,
     name varchar(255) not null,
     middle_name varchar(255) not null,
-    date_birth date() NOT NUll,
-    sex varchar(7) NOT NULL,
+    date_birth date NOT NUll,
+    sex varchar(50) NOT NULL,
     create_date datetime DEFAULT CURRENT_TIMESTAMP,
-	city varchar(255),
-     email varchar(255),
-     telephone varchar(25),
-     specialization varchar(255),
-     money_from int(11),
-     money_to int(11),
-     employment varchar(255),
-     shedule varchar(255),
-     begging_work date(),
-     end_work date(),
-     organization varchar(255),
-	position varchar(255),
-	responsibilites varchar(255),
-     about_you varchar(255)
+	city varchar(255) NOT null,
+     email varchar(255) NOT NULL,
+     telephone varchar(25) NOT NULL,
+     specialization varchar(255) NOT NULL,
+     money_from int(11) NOT NULL,
+     money_to int(11) NOT NULL,
+     employment varchar(255) NOT NULL,
+     shedule varchar(255) NOT NULL,
+     begging_work date NOT NULL,
+     end_work date NOT NULL,
+     organization varchar(255) NOT NULL,
+	position varchar(255) NOT NULL,
+	responsibilites varchar(255) NOT NULL,
+     about_you varchar(255) NOT NULL
     )
 
 <p align="center">
