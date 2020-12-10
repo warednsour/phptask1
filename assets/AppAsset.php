@@ -20,12 +20,22 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+        'css/bootstrap-datepicker.css',
+        'css/jquery-deitable-select.css',
+        'css/main.css',
+        'css/tagsinput.css',
     ];
     public $js = [
+      'js/bootstrap-datepicker.js',
+        'js/bootstrap-datepicker.ru.min.js',
+          'js/jquery-deitable-select.js',
+            'js/jquery.nselect.min.js',
+              'js/main.js',
+                'js/tagsinput.js',
+
     ];
     public $depends = [
-        'yii\web\YiiAsset',
+        // 'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
 }
