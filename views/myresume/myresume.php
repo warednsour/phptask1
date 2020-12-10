@@ -8,7 +8,7 @@ use yii\helpers\Html;
     <div class="container">
         <div class="col-lg-9">
             <div class="main-title mb32 mt50 d-flex justify-content-between align-items-center">Мои резюме
-                <a href="#" class="link-orange-btn orange-btn my-vacancies-add-btn">Добавить резюме</a><a
+                <a href="<?= Url::to(['/myresume/newresume'])?>" class="link-orange-btn orange-btn my-vacancies-add-btn">Добавить резюме</a><a
                         class="my-vacancies-mobile-add-btn link-orange-btn orange-btn plus-btn" href="#">+</a></div>
             <div class="tabs mb64">
                 <div class="tabs__content active">
@@ -26,7 +26,7 @@ use yii\helpers\Html;
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right"
                                              aria-labelledby="dropdownMenuLink">
-                                            <a class="dropdown-item" href="<?= Url::to(['/myresume/editregresume'])?>">Редактировать</a>
+                                            <a class="dropdown-item" href="<?= Url::to(['/myresume/editresume'])?>">Редактировать</a>
                                             <a class="dropdown-item" href="#">Удалить</a>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@ use yii\helpers\Html;
                                     <div class="my-resume-dropdown dropdown show mb8">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/dots.svg" alt="dots"> <?//= Html::img('@web/images/dots.svg' , ['alt' => 'dots']);?>
+                                            <img src="images/dots.svg" alt="dots">
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right"
                                              aria-labelledby="dropdownMenuLink">
