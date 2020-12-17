@@ -1,8 +1,8 @@
 
 
-<p align="center" style="background-color: #6610f2">
-   <a href="https://github.com/yiisoft" target="_blank">
-       <img src="web/images/logo.svg" height="100px">
+<p align="center" >
+   <a href="https://github.com/warednsour/phptask1.git" target="_blank">
+       <img src="web/images/logo.svg" height="100px" style="background-color: #6610f2">
    </a>
    <h1 align="center">Yii 2 Basic Project Template</h1>
    <br>
