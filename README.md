@@ -99,7 +99,9 @@ return [
 
 create a db with the name phptask
 run this command
-CREATE TABLE `resume` (
+
+
+`CREATE TABLE `resume` (
    id int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
    family varchar(255) NOT null,
    name varchar(255) not null,
@@ -123,6 +125,8 @@ CREATE TABLE `resume` (
     about_you varchar(255) NOT NULL,
     link varchar(255) NOT NULL
    )
+   
+   `
    
 TESTING
 -------
